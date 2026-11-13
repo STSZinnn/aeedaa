@@ -1,0 +1,38 @@
+release: 0.5.0-multiplayer-repair
+api: Paper 1.21.11
+java: 21
+verification:
+  java-syntax: passed javac parser (15 source files)
+  configuration: YAML parsed; class and ability counts checked
+  full-paper-compile: 'NOT performed: Paper dependency unavailable offline'
+  multiplayer-test: NOT performed
+counts:
+  skillsets: 12
+  passive-nodes-defined: 175
+  passive-nodes-enabled-by-configuration: 149
+  passive-nodes-preview-only: 26
+  active-entries: 72
+  equipped-ability-slots: 2
+working-scope-added:
+- Assassin's 4-branch skill tree with combat/stealth/defense hooks
+- TNT owner-binding, restoration, 4-second use cooldown and display name
+- Additional starter kits for previously empty classes
+- Advancement reward removed; kill reward 2 points with 24-hour pair restriction and 10-minute global interval
+- Guardian shield critical-axe stun and ordinary axe disable resistance
+- Engineer targeting from correct machine center, hostile-mob fallback and deployment scanning
+- XP-funded passive trusted-player Infuser mending retained
+- Additional purchasable passives with event handlers
+- Tooltips with wrapped descriptions and exact ability configuration values
+known-gaps:
+- This is a multiplayer candidate build, not the fully completed plugin.
+- 26 draft passives remain unavailable and should not consume points.
+- Some legacy enabled passives use provisional balance or simplified approximations.
+- Many abilities still share base handler types; six distinct finalized class-specific abilities are not assured.
+- No resource-pack-level 3D turret rendering or region protection integration.
+- Protected-region and duplication regression tests remain required.
+- A successful GitHub Actions compilation and multiplayer playtest are required.
+migration-notice:
+  skillsets: Existing plugins/Ultrabound/skillsets.yml is NOT overwritten. Back it up and replace or merge this bundled version
+    to see new nodes and enable flags.
+  config: Existing config.yml is NOT overwritten. Backup and merge settings.
+  playerdata: Never delete or replace plugins/Ultrabound/playerdata; keep your progress.

@@ -1,0 +1,94 @@
+# Provisional defaults for Paper 1.21.11. Existing configs are never overwritten.
+progression:
+  starting-points: 3
+  total-allocated-cap: 30
+  branch-allocated-cap: 15
+  natural-ore-breaks-per-point: 24
+  engineer-branch-unlock-cost: 2
+  enabled: true
+  points-per-advancement: 0
+  points-per-legitimate-pvp-kill: 2
+  same-pair-kill-cooldown-seconds: 86400
+  global-kill-reward-cooldown-seconds: 600
+first-join:
+  gui-delay-ticks: 40
+ability:
+  slots: 2
+  require-equipped: true
+  prevent-use-in-protected-worlds: true
+  disabled-worlds: []
+  allow-while-spectator: false
+infinite-tnt:
+  enabled: true
+  fuse-ticks: 80
+  cooldown-ticks: 80
+  block-damage: false
+  fire: false
+  max-active-per-player: 3
+  require-vanilla-placement: true
+potions:
+  infusium-zombie-drop-chance: 0.015
+  infusium-villager-offers: false
+  negative-effects:
+  - POISON
+  - WITHER
+  - INSTANT_DAMAGE
+  - WEAKNESS
+  - SLOWNESS
+  - BLINDNESS
+  - LEVITATION
+  combine-requires-alchemist: true
+  infusion-uses-custom-effects: true
+true-invisibility:
+  duration-seconds: 8
+  stop-on-damage: true
+  stop-on-attack: true
+  hide-from-staff: false
+  cooldown-seconds: 90
+enchanter:
+  ascension-xp-level-cost: 5
+  max-enchant-level: 6
+  allow-above-vanilla-max: false
+  excluded-enchantments: []
+guardian:
+  auto-replace-bound-shield: true
+  axe-critical-stun-ticks: 60
+  allow-other-player-to-hold-bound-shield: false
+trust:
+  protect-from-all-ultrabound-damage: true
+vfx:
+  enabled: true
+  particle-count: 8
+engineer:
+  mechanics-first-branch-free: true
+  medical-supply-mode: Infinite
+  machines-enabled: true
+  medic-preview:
+    enabled: true
+    lifetime-seconds: 45
+    pulse-ticks: 40
+    range: 6
+    heal-per-pulse: 1.0
+  infuser:
+    xp-per-deposit: 150
+    xp-per-durability: 1.0
+    infused-duration-seconds: 60
+    infused-cooldown-seconds: 300
+  max-machines-per-owner: 3
+  machine-range: 8
+  combat-machines-enabled: true
+  target-hostile-mobs-when-no-player: true
+  medic-heal: 1.0
+  ballistic-damage: 1.5
+  explosive-damage: 2.0
+  advanced-damage: 2.5
+
+# v0.4 multiplayer workshop safety options
+engineer-workshop:
+  passive-infuser-mending: true
+  mending-range: 7.0
+  mending-durability-per-target: 4
+  mending-xp-per-durability: 1.0
+  mending-max-targets-per-cycle: 4
+  mending-include-inventory: false
+  mending-cycle-ticks: 100
